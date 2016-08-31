@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MitVehicleContext-Web.config Connection String" description="MitVehicleContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=MitVehicleContext-20160728191932; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|MitVehicleContext-20160728191932.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Venkatraj\\documents\\visual\ studio\ 2015\\Projects\\MitVehicle\\MitVehicle\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MitVehicleContext']/@connectionString" />
+  </parameter>
+</parameters>

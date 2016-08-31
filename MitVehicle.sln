@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MitVehicle", "MitVehicle\MitVehicle.csproj", "{5B12AAF7-0875-432A-A0D6-075734473990}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MitVehicleTest", "MitVehicleTest\MitVehicleTest.csproj", "{46403AC9-B335-4CCE-ACFA-2D7BFC27DB52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B12AAF7-0875-432A-A0D6-075734473990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B12AAF7-0875-432A-A0D6-075734473990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B12AAF7-0875-432A-A0D6-075734473990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B12AAF7-0875-432A-A0D6-075734473990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46403AC9-B335-4CCE-ACFA-2D7BFC27DB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46403AC9-B335-4CCE-ACFA-2D7BFC27DB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46403AC9-B335-4CCE-ACFA-2D7BFC27DB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46403AC9-B335-4CCE-ACFA-2D7BFC27DB52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mitchellevehicle.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MitVehicle\\MitVehicle.csproj
+		SccProjectName1 = MitVehicle
+		SccLocalPath1 = MitVehicle
+		SccProjectUniqueName2 = MitVehicleTest\\MitVehicleTest.csproj
+		SccProjectName2 = MitVehicleTest
+		SccLocalPath2 = MitVehicleTest
+	EndGlobalSection
+EndGlobal

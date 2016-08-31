@@ -1,0 +1,84 @@
+﻿<div data-ng-app="VehicleCallModule">
+    <div data-ng-controller="VehicleCallController as app">
+    <div class="jumbotron text-center">
+        <h2>Create Vehicles</h2>
+        <div>
+            <form name="newVehicleForm" class="form-inline">
+                <div class="form-group">
+                    <input id="Year" type="number" min="1950" max="2050" class="form-control" placeholder="Year" ng-model="app.entity.Year" required>
+                </div>
+                <div class="form-group">
+                    <input id="Make" type="text" class="form-control" placeholder="Make"  ng-model="app.entity.Make" required>
+                </div>
+                <div class="form-group">
+                    <input id="Model" type="text" class="form-control" placeholder="Model"  ng-model="app.entity.Model" required>
+                </div><br />
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" ng-disabled="newVehicleForm.$pristine" ng-click="app.insertNewVehicle()">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        <div class="row">
+
+            <div class="col-md-6">
+                <h2>Current Vehicles</h2>
+                <div class="tblVehicles">
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <th>ID</th>
+                            <th>Year</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                        </tr>
+                        <tbody data-ng-repeat="v in vehicles">
+                            <tr class="vitem" ng-click="app.getVehicle(v.Id)">
+                                <td width="10%" data-ng-bind="v.Id"></td>
+                                <td width="20%" data-ng-bind="v.Year"></td>
+                                <td width="35%" data-ng-bind="v.Make"></td>
+                                <td width="35%" data-ng-bind="v.Model"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Edit Vehicle</h2>
+                <div>
+                    <form class="form-horizontal" name="updateVehicleForm" role="form">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">ID :</label>
+                            <div class="col-sm-10">
+                                <label class="control-label" >{{app.editEntity.Id ? app.editEntity.Id:' --- '}}</label>
+                            </div> 
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Year :</label>
+                            <div class="col-sm-10">
+                                <input ng-model="app.editEntity.Year" type="number" min="1950" max="2050" class="form-control" placeholder="Year" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Make :</label>
+                            <div class="col-sm-10">
+                                <input ng-model="app.editEntity.Make" type="text" class="form-control" placeholder="Make" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Model :</label>
+                            <div class="col-sm-10">
+                                <input  ng-model="app.editEntity.Model" type="text" class="form-control" placeholder="Model" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-info" ng-disabled="updateVehicleForm.$pristine" ng-click="app.updateVehicle(app.editEntity.Id)">Update</button>
+                                <button type="submit" class="btn btn-warning" style="margin-left:30px;" ng-click="app.deleteVehicle(app.editEntity.Id)">Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

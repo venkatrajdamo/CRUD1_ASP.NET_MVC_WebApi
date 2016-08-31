@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="MitchelleWebApp" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Venkatraj\\documents\\visual\ studio\ 2015\\Projects\\MitVehicle\\MitVehicle\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Venkatraj\\documents\\visual\ studio\ 2015\\Projects\\MitVehicle\\MitVehicle\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="MitVehicleContext-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=MitVehicleContext-20160728191932; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|MitVehicleContext-20160728191932.mdf" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Venkatraj\\documents\\visual\ studio\ 2015\\Projects\\MitVehicle\\MitVehicle\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MitVehicleContext']/@connectionString" />
+  </parameter>
+</parameters>
